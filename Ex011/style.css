@@ -1,0 +1,42 @@
+div {
+    display: inline-block;
+    background-color: lightgray;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
+
+/*
+    Pseudo-classes está realcionado ao estado do elemento
+
+*/
+
+div:hover {
+    background-color: aqua;
+}
+
+#d4 {
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+    max-width: 200px;
+    background-color: white;
+    border: none;
+    text-align: justify;
+    display: block;
+}
+
+#d4:hover {
+    color: orange;
+}
+
+#d4 > p {
+    display: none;
+}
+
+#d4:hover > p {
+    display: block;
+}
+

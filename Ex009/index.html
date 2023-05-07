@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSs internos</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style>
+
+        /* Adicionar fontes externas */
+        /*
+        @font-face {
+            font-family: '';
+            src: url('') format(''), url('') fomrat('');
+            font-weight: ;
+            font-style: ;
+        
+            Tipos de format():
+            -opentype (otf)
+            -truetype (ttf)
+            
+        }
+        */
+
+
+        body {
+            height: 100vh;
+            background-image: linear-gradient(to top, aquamarine, white);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc (utilizar px)
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, % (utilizar em)
+            */
+            font-size: 1.5em;
+        }
+        
+        h2 {
+            font-size: 1em;
+        }
+
+        p {
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 0.75em;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            /* 
+            shorthand font
+
+            font-style -> font-weight -> font-size -> font-family 
+            
+            font: normal normal 0.75em 'Times New Roman', Times, serif;
+            */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Título Principal</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, delectus. Nostrum assumenda illo voluptatibus? Reiciendis vero beatae cum velit tempore aliquam hic eligendi provident animi optio corrupti, tenetur error sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque placeat non corrupti sequi dolore quasi nisi, totam nemo, doloribus architecto temporibus maiores culpa facilis vero perferendis dolorem. Itaque, assumenda! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam optio commodi ad alias odit perspiciatis esse ex deserunt totam, debitis cupiditate! Accusantium veniam sunt ab omnis nisi beatae minima illo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima maxime eius ea cupiditate aspernatur necessitatibus atque totam eaque impedit! Earum fugiat quam dignissimos nemo, quas ut molestiae cupiditate iste laborum!</p>
+
+    <h2>Título 2</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex velit ducimus quis animi odio commodi nesciunt autem ipsum. Consequuntur laboriosam, tempora quae enim suscipit quos explicabo repellendus dignissimos distinctio nihil!</p>
+
+</body>
+</html>

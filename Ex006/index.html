@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios e Videos</title>
+</head>
+<body>
+
+    <h2>Reprodução de audio</h2>
+
+    <!--MP3 WAV OGG-->
+
+    <audio src="Eletrosamba - Quincas Moreira.mp3" controls></audio>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="" type="audio/mpeg"></source> <!--Para MP3-->
+        <source src="" type="audio/ogg"></source>
+        <source src="" type="audio/wav"></source>
+    </audio>
+    
+    <h2>Inserindo videos no site</h2> <!--MP4 WEBV OGV-->
+
+    <p>Videos com hospedagem própria</p>
+    
+    <video width="220" controls autoplay loop> <!--o parâmetro 'posters' é utilizado para adicionar uma imagem como capa para o video-->
+        <source src="videos/Meu-Video-i.m4v" type="video/m4v">
+        <source src="videos/Meu-Video-i.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com esse arquivo.</p>
+    </video>
+
+    <p>Incorporação de videos externos</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LvWqlDtzU70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

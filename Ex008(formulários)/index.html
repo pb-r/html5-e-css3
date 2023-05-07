@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <h1>Formulário de Cadastro</h1>
+
+<!--
+    Observações sobre GET:
+
+Anexa dados de formulário ao URL em pares de nome/valor
+O comprimento de um URL é limitado (cerca de 3.000 caracteres)
+Nunca use GET para enviar dados confidenciais! (será visível no URL)
+Útil para envios de formulários em que um usuário deseja marcar o resultado como favorito
+GET é melhor para dados não seguros, como strings de consulta no Google
+
+Observações sobre o POST:
+
+Anexa dados de formulário dentro do corpo da solicitação HTTP (os dados não são mostrados na URL)
+Não tem limitações de tamanho
+Os envios de formulário com POST não podem ser marcados
+-->
+
+    <form action="" method="get"> <!--O parâmetro action define o destino dos dados que serão tratado no backend-->
+
+        <label for="nome">Nome:
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+        </label>
+
+        <label for="sobrenome" style="margin-left: 50px">Sobrenome:
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+        </label>
+        
+        <br>
+        <br>
+
+        <label for="email" >Email:
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+        </label>
+
+        <label for="senha" style="margin-left: 50px">Senha:
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+        </label>
+
+        <br>
+
+        <h3>Turno preferível</h3>
+
+        <select name="turno" id="turno" required>
+            <option disable selected value="">Seleciona um turno</option>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+        </select>
+
+        <br>
+
+        <h3>Idade:</h3>
+
+        <!--Definindo o mesmo name para um input do tipo radio escolhendo o mesmo name pode ser selecionado uma das opções-->
+
+        <input type="radio" name="idade" id="less18">
+        <label for="less18">Tenho menos de 18 anos</label>
+
+        <input type="radio" name="idade" id="more18">
+        <label for="more18">Tenho mais de 18 anos</label>
+
+        <br>
+
+        <h4>Digite suas qualificações:</h4>
+        <textarea name="quali" id="quali" cols="30" rows="5"></textarea>
+
+        <br>
+        <br>
+
+        <hr>
+
+        <input type="checkbox" name="acordo" id="acordo" value="yes">
+        <label for="acordo">Concordo com os termo de uso</label>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
